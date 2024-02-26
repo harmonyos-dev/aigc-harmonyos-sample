@@ -132,91 +132,91 @@ struct Index {
     // 要求：使用滑动组件展示食物的详细信息，包括使用画布组件展示单位重量的食物各个营养元素的的占比,使用进度条组件展示当前食物是否为高热食物，
     // 以及展示单位重量的食物所包含的热量、脂肪、蛋白质、碳水以及维他命C值；并且点击记录按钮可以弹出记录饮食的弹窗，包括记录食物的种类、重量以及用餐时间，
     // 可以通过点击完成添加饮食，同时添加的饮食信息会在“记录”Tab页签做展示。
-    Column({ space: 10 }) {
-      Text('食物名称')
-        .textAlign(TextAlign.Center)
-        .fontSize(20)
-        .fontColor('#ff0000')
-
-      Row() {
-        Text('食物详情')
-          .margin({ right: 10 })
-          .width('60%')
-          .height(300)
-          .backgroundColor(0xF5DEB3)
-
-        Column({ space: 5 }) {
-          Flex({
-            direction: FlexDirection.Row,
-            wrap: FlexWrap.NoWrap,
-            justifyContent: FlexAlign.SpaceBetween,
-            alignItems: ItemAlign.Center
-          }) {
-            Text('热量')
-              .width('30%')
-              .height(50)
-              .backgroundColor(0xF5DEB3)
-            Text('脂肪')
-              .width('30%')
-              .height(50)
-              .backgroundColor(0xD2B48C)
-            Text('蛋白质')
-              .width('30%')
-              .height(50)
-              .backgroundColor(0xF5DEB3)
-          }
-          .height(70)
-          .width('90%')
-          .backgroundColor(0xAFEEEE)
-
-          Flex({
-            direction: FlexDirection.Row,
-            wrap: FlexWrap.NoWrap,
-            justifyContent: FlexAlign.SpaceBetween,
-            alignItems: ItemAlign.Center
-          }) {
-            Text('碳水')
-              .width('30%')
-              .height(50)
-              .backgroundColor(0xF5DEB3)
-            Text('维他命C')
-              .width('30%')
-              .height(50)
-              .backgroundColor(0xD2B48C)
-          }
-          .height(70)
-          .width('90%')
-          .backgroundColor(0xAFEEEE)
-
-          Progress({ value: 0, total: 100, type: ProgressType.Capsule })
-            .width(200)
-            .height(50)
-            .style({ strokeWidth: 50 })
-          // .value(this.progressValue)
-
-          Button('记录', { type: ButtonType.Normal, stateEffect: true })
-            .borderRadius(8)
-            .margin({ left: 12 })
-            .backgroundColor(0x317aff)
-            .width(90)
-            .height(40)
-            .onClick(() => {
-              // 弹出记录饮食的弹窗
-              // this.dialogController.open()
-            })
-        }
-      }
-
-      Text('用餐记录')
-        .textAlign(TextAlign.Center)
-        .fontSize(16)
-        .fontColor('#0000ff')
-
-      Column() {
-        // 饮食记录展示
-        // CustomDialogControllerExample({})
-      }
-    }
-    .width('90%')
+    // Column({ space: 10 }) {
+    //   Text('食物名称')
+    //     .textAlign(TextAlign.Center)
+    //     .fontSize(20)
+    //     .fontColor('#ff0000')
+    //
+    //   Row() {
+    //     Text('食物详情')
+    //       .margin({ right: 10 })
+    //       .width('60%')
+    //       .height(300)
+    //       .backgroundColor(0xF5DEB3)
+    //
+    //     Column({ space: 5 }) {
+    //       Flex({
+    //         direction: FlexDirection.Row,
+    //         wrap: FlexWrap.NoWrap,
+    //         justifyContent: FlexAlign.SpaceBetween,
+    //         alignItems: ItemAlign.Center
+    //       }) {
+    //         Text('热量')
+    //           .width('30%')
+    //           .height(50)
+    //           .backgroundColor(0xF5DEB3)
+    //         Text('脂肪')
+    //           .width('30%')
+    //           .height(50)
+    //           .backgroundColor(0xD2B48C)
+    //         Text('蛋白质')
+    //           .width('30%')
+    //           .height(50)
+    //           .backgroundColor(0xF5DEB3)
+    //       }
+    //       .height(70)
+    //       .width('90%')
+    //       .backgroundColor(0xAFEEEE)
+    //
+    //       Flex({
+    //         direction: FlexDirection.Row,
+    //         wrap: FlexWrap.NoWrap,
+    //         justifyContent: FlexAlign.SpaceBetween,
+    //         alignItems: ItemAlign.Center
+    //       }) {
+    //         Text('碳水')
+    //           .width('30%')
+    //           .height(50)
+    //           .backgroundColor(0xF5DEB3)
+    //         Text('维他命C')
+    //           .width('30%')
+    //           .height(50)
+    //           .backgroundColor(0xD2B48C)
+    //       }
+    //       .height(70)
+    //       .width('90%')
+    //       .backgroundColor(0xAFEEEE)
+    //
+    //       Progress({ value: 0, total: 100, type: ProgressType.Capsule })
+    //         .width(200)
+    //         .height(50)
+    //         .style({ strokeWidth: 50 })
+    //       // .value(this.progressValue)
+    //
+    //       Button('记录', { type: ButtonType.Normal, stateEffect: true })
+    //         .borderRadius(8)
+    //         .margin({ left: 12 })
+    //         .backgroundColor(0x317aff)
+    //         .width(90)
+    //         .height(40)
+    //         .onClick(() => {
+    //           // 弹出记录饮食的弹窗
+    //           // this.dialogController.open()
+    //         })
+    //     }
+    //   }
+    //
+    //   Text('用餐记录')
+    //     .textAlign(TextAlign.Center)
+    //     .fontSize(16)
+    //     .fontColor('#0000ff')
+    //
+    //   Column() {
+    //     // 饮食记录展示
+    //     // CustomDialogControllerExample({})
+    //   }
+    // }
+    // .width('90%')
   }
 }
