@@ -1,0 +1,26 @@
+.hljs {
+    color: #FAA23D;
+    background: #2B2B2B !important;
+}
+span.hljs-meta {
+    color: #BBB529 !important;
+}
+span.hljs-keyword {
+    color: #E2DA90 !important;
+}
+
+span.hljs-title {
+    color: #65CCE1 !important;
+}
+span.hljs-string {
+    color: #AA7DFC !important;
+}
+span.hljs-number {
+    color: #D3E54C !important;
+}
+span.hljs-property, span.hljs-attr {
+    color: #ffffff !important;
+}
+span.hljs-built_in, span.hljs-literal, span.hljs-params {
+    color: #cc7832 !important;
+}

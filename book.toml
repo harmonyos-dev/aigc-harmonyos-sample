@@ -11,3 +11,4 @@ git-repository-icon = "fa-github"
 edit-url-template = "https://github.com/harmonyos-dev/aigc-harmonyos-sample/edit/master/{path}"
 site-url = "/"
 additional-js = ["assets/custom.js"]
+additional-css = ["assets/custom.css"]
