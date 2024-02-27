@@ -1,4 +1,4 @@
-# 理解 HarmonyOS 应用与 AIGC 能力
+# 理解 HarmonyOS 应用与生成式 AI 能力
 
 ## 理解 HarmonyOS 应用
 
