@@ -6,8 +6,8 @@ src = "src"
 title = "HarmonyOS AI Case Study"
 
 [output.html]
-git-repository-url = "https://github.com/harmonyos-dev/autodev-harmonyos-sample"
+git-repository-url = "https://github.com/harmonyos-dev/aigc-harmonyos-sample"
 git-repository-icon = "fa-github"
-edit-url-template = "https://github.com/harmonyos-dev/autodev-harmonyos-sample/edit/master/{path}"
+edit-url-template = "https://github.com/harmonyos-dev/aigc-harmonyos-sample/edit/master/{path}"
 site-url = "/"
 additional-js = ["assets/custom.js"]
