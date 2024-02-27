@@ -155,7 +155,7 @@ ECMAScript = {
         "this",
         "super",
         "console",
-        "window",
+        // "window",
         "document",
         "localStorage",
         "sessionStorage",
