@@ -1,5 +1,12 @@
 # AutoDev Sample
 
+[AutoDev](https://github.com/unit-mesh/auto-dev) 场景分析
+
+- ArkUI 生成
+- ArkTS 代码补全
+- Android/微信小程序代码迁移
+- 测试代码生成
+
 ## Sample
 
 ### MusicPlayer
