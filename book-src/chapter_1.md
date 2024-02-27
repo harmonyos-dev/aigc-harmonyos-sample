@@ -1,6 +1,14 @@
-# 理解 HarmonyOS 应用与 AIGC 能力 
+# 理解 HarmonyOS 应用与 AIGC 能力
 
 ## 理解 HarmonyOS 应用
+
+HarmonyOS 应用的组成：
+
+- ArkTS 是鸿蒙生态中基于 TypeScript 扩展的应用开发语言。
+- ArkUI 是一套构建分布式应用界面的声明式 UI 开发框架。它与我们先前引入的 AutoPage 并没有太多的区别，可以结合思维链进行代码和
+  UI 生成。
+- DevEco Hvigor 是使用 TypeScript 语言开发的全新轻量化的任务调度工具，针对 HarmonyOS 应用提供了一系列编译构建任务，支持将
+  HarmonyOS 应用编译构建出对应的产物包。
 
 ### Ability 代码示例
 

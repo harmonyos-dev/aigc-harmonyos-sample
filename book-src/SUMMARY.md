@@ -4,3 +4,4 @@
 - [鸿蒙应用测试生成](./chapter_2.md)
 - [鸿蒙应用 UI 生成](./chapter_3.md)
 - [AI 迁移 Android 布局](./android_migration.md)
+- [AI 生成持续集成脚本](./harmonyos-github-action.md)
