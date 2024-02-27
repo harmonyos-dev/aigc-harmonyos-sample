@@ -10,8 +10,11 @@ Author: Oleg Efimov <efimovov@gmail.com>
  Description: Groovy programming language implementation inspired from Vsevolod's Java mode
  Website: https://groovy-lang.org
  */
+let ECMAScript = {
 
-const ECMAScript = {
+}
+
+ECMAScript = {
     IDENT_RE:  '[A-Za-z$_][0-9A-Za-z$_]*',
     KEYWORDS: [
         "as", // for exports
@@ -159,12 +162,11 @@ const ECMAScript = {
         "module",
         "global" // Node.js
     ],
-    BUILT_INS: [].concat(
-        BUILT_IN_GLOBALS,
-        TYPES,
-        ERROR_TYPES
-    )
 }
+
+ECMAScript.BUILT_INS = [].concat(
+  ECMAScript.BUILT_IN_GLOBALS, ECMAScript.TYPES, ECMAScript.ERROR_TYPES
+)
 
 let arkts_lang = function (hljs) {
     const regex = hljs.regex;
