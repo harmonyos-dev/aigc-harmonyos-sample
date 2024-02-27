@@ -31,3 +31,6 @@ span.hljs-hex_number {
 span.hljs-comment {
     color: #808080;
 }
+span.hljs.language-undefined {
+    color: #ffffff;
+}
