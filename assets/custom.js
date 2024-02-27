@@ -272,7 +272,12 @@ let javascript = function (hljs) {
 
             // DecimalBigIntegerLiteral
             { begin: `\\b(0|[1-9](_?[0-9])*)n\\b` },
-
+        ],
+        relevance: 0
+    };
+    const HEX_NUMBER = {
+        className: 'hex_number',
+        variants: [
             // NonDecimalIntegerLiteral
             { begin: "\\b0[xX][0-9a-fA-F](_?[0-9a-fA-F])*n?\\b" },
             { begin: "\\b0[bB][0-1](_?[0-1])*n?\\b" },
@@ -397,6 +402,7 @@ let javascript = function (hljs) {
         // Skip numbers when they are part of a variable name
         { match: /\$\d+/ },
         NUMBER,
+        HEX_NUMBER,
     // This is intentional:
     // See https://github.com/highlightjs/highlight.js/issues/3288
     // hljs.REGEXP_MODE
@@ -634,6 +640,7 @@ let javascript = function (hljs) {
             // Skip numbers when they are part of a variable name
             { match: /\$\d+/ },
             NUMBER,
+            HEX_NUMBER,
             CLASS_REFERENCE,
             {
                 className: 'attr',

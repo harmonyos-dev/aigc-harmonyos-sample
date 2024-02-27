@@ -1,26 +1,33 @@
 .hljs {
-    color: #FAA23D;
-    background: #2B2B2B !important;
+    color: #fff;
+    background: #2B2B2B;
+    line-height: 1.5;
 }
 span.hljs-meta {
-    color: #BBB529 !important;
+    color: #BBB529;
 }
 span.hljs-keyword {
-    color: #E2DA90 !important;
+    color: #E2DA90;
 }
 
 span.hljs-title {
-    color: #65CCE1 !important;
+    color: #65CCE1;
 }
 span.hljs-string {
-    color: #AA7DFC !important;
+    color: #AA7DFC;
 }
 span.hljs-number {
-    color: #D3E54C !important;
+    color: #D3E54C;
 }
-span.hljs-property, span.hljs-attr {
-    color: #ffffff !important;
+span.hljs-property, span.hljs-attr,span.hljs-params .hljs-title.class_ {
+    color: #ffffff;
 }
 span.hljs-built_in, span.hljs-literal, span.hljs-params {
-    color: #cc7832 !important;
+    color: #cc7832;
+}
+span.hljs-hex_number {
+    color: #DB7E9B;
+}
+span.hljs-comment {
+    color: #808080;
 }
