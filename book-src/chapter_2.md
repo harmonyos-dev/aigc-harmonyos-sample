@@ -3,13 +3,16 @@
 ## 使用方式
 
 1. 从插件市场安装应用：[https://plugins.jetbrains.com/plugin/21520-autodev](https://plugins.jetbrains.com/plugin/21520-autodev)
-2. 选中需求，右键选择 `AutoDev AI Action`，点击 `Auto Generate ArkUI` 即可生成代码。
+2. 在项目目录创建 `prompts/Gen-HarmonyOS-Test.vm` 文件，写入 prompt
+3. 右键选中内容，执行 `AutoDev AI Action`，点击 `Gen HarmonyOS Test` 即可生成测试代码。
 
-![](./images/autodev-arkui-sample.png)
+右键示例：
+
+![Gen HarmonyOS Test](images/gen-harmonyos-test.png)
 
 ## Prompt 示例
 
-在项目目录创建 `prompts/Gen-HarmonyOS-Test.vm` 文件，写入以下的内容
+
 
     ---
     interaction: ChatPanel
