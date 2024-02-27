@@ -457,7 +457,7 @@ let javascript = function (hljs) {
             // class Car
             {
                 match: [
-                    /class/,
+                    /class|struct/,
                     /\s+/,
                     IDENT_RE
                 ],

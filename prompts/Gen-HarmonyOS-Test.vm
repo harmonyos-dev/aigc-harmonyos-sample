@@ -1,3 +1,7 @@
+---
+interaction: ChatPanel
+---
+
 Write Test for follow ${language} language code.
 
 1. You should use `describe` `it` `expect` to write test.
