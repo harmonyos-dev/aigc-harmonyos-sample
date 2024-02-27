@@ -1,4 +1,4 @@
-# HarmonyOS AI 生成测试 
+# AI 生成 HarmonyOS 测试代码 
 
 ## 使用方式
 

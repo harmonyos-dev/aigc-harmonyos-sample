@@ -1,5 +1,7 @@
 # AI 生成持续集成脚本
 
+TODO：当前 HarmonyOS 项目要支持这种方式比较有难度，需要等待 HarmonyOS 官方提供支持。
+
 ## Install
 
 OHPM doc: https://ohpm.openharmony.cn/#/cn/help/quickstart

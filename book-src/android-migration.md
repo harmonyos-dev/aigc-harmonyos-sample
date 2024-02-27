@@ -1,5 +1,4 @@
-# AI 迁移 Android 布局
-
+# AI 迁移 Android 布局到鸿蒙应用
 
 ## 使用方式
 
