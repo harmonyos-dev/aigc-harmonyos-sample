@@ -930,7 +930,6 @@ var hljs = (function () {
      * @param {Array<string>} keywordList
      */
     function compileList(scopeName, keywordList) {
-      console.log(scopeName, keywordList)
       if (caseInsensitive) {
         keywordList = keywordList.map(x => x.toLowerCase());
       }
