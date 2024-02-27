@@ -1,3 +1,11 @@
+Write Test for follow code.
+
+1. You should use `describe` `it` `expect` to write test.
+
+
+For example:
+
+```ArkTS
 import { describe, it, expect } from '@ohos/hypium'
 
 export default function abilityTest() {
@@ -11,3 +19,14 @@ export default function abilityTest() {
     })
   })
 }
+```
+
+Here is user code:
+
+```ArkTS
+${selection}
+```
+
+Please write test for it, use markdown syntax.
+
+
