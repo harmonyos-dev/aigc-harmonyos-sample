@@ -3,7 +3,7 @@
     background: #2B2B2B;
     line-height: 1.5;
 }
-span.hljs-meta {
+span.hljs-meta, span.hljs-variable {
     color: #BBB529;
 }
 span.hljs-keyword {
