@@ -1,9 +1,9 @@
 [book]
 authors = ["Phodal Huang"]
-language = "en"
+language = "zh-cn"
 multilingual = false
-src = "src"
-title = "HarmonyOS AI Case Study"
+src = "book-src"
+title = "HarmonyOS with AIGC"
 
 [output.html]
 git-repository-url = "https://github.com/harmonyos-dev/aigc-harmonyos-sample"
