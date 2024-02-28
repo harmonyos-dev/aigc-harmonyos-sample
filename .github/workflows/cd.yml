@@ -66,8 +66,11 @@ jobs:
           export HOS_SDK_HOME=$(pwd)/hwsdk
           ./node_modules/.bin/hvigor --mode module -p product=default assembleHap --no-daemon --accept-license
 
-      - name: Upload artifact
-        uses: actions/upload-artifact@v4
+      - name: Upload assets to release
+        uses: svenstaro/upload-release-action@v2
         with:
-          name: entry-default-unsigned.hap
-          path: entry/build/default/outputs/default/entry-default-unsigned.hap
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          file: entry/build/default/outputs/default/entry-default-unsigned.hap
+          tag: ${{ github.ref }}
+          overwrite: true
+          file_glob: true

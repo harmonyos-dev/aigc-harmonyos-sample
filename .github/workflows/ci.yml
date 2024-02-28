@@ -62,3 +62,9 @@ jobs:
           # for ERROR: Unable to find 'hwsdk.dir' in 'local.properties' or 'HOS_SDK_HOME' in the system environment path.
           export HOS_SDK_HOME=$(pwd)/hwsdk
           ./node_modules/.bin/hvigor --mode module -p product=default assembleHap --no-daemon
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: entry-default-unsigned.hap
+          path: entry/build/default/outputs/default/entry-default-unsigned.hap
