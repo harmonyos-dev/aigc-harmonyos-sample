@@ -52,6 +52,8 @@ jobs:
           chmod +x command-line-tools/sdkmanager/bin/sdkmgr
           # 安装 HarmonyOS SDK
           command-line-tools/sdkmanager/bin/sdkmgr install toolchains:9 OpenHarmony/toolchains:9 --accept-license
+          # get current dir and export to HOS_SDK_HOME
+          export HOS_SDK_HOME=$(pwd)/hwsdk
 
       - name: Install dependencies
         run: npm ci
@@ -59,8 +61,7 @@ jobs:
       - name: Build
         run: |
           # for ERROR: Unable to find 'hwsdk.dir' in 'local.properties' or 'HOS_SDK_HOME' in the system environment path.          
-          export HOS_SDK_HOME=hwsdk/
-          ./node_modules/.bin/hvigor --mode module -p product=default assembleHap --no-daemon
+          ./node_modules/.bin/hvigor --mode module -p product=default assembleHap --no-daemon --accept-license
 #
 #      - name: Upload artifact
 #        uses: actions/upload-artifact@v2
