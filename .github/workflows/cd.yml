@@ -1,10 +1,9 @@
-name: CI
+name: Continuous Deployment
 
 on:
   push:
-    branches:
-      - master
-  pull_request:
+    tags:
+      - '*'           # Push events to every tag not containing /
 
 jobs:
   build:
@@ -61,4 +60,10 @@ jobs:
         run: |
           # for ERROR: Unable to find 'hwsdk.dir' in 'local.properties' or 'HOS_SDK_HOME' in the system environment path.
           export HOS_SDK_HOME=$(pwd)/hwsdk
-          ./node_modules/.bin/hvigor --mode module -p product=default assembleHap --no-daemon
+          ./node_modules/.bin/hvigor --mode module -p product=default assembleHap --no-daemon --accept-license
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: entry-default-unsigned.hap
+          path: entry/build/default/outputs/default/entry-default-unsigned.hap
