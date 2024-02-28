@@ -35,5 +35,11 @@ TODO：当前 HarmonyOS 项目要支持这种方式比较有难度，需要等�
 > hvigor BUILD SUCCESSFUL in 5 s 130 ms
 ```
 
+## 安装 SDK
+
+```bash
+command-line-tools/sdkmanager/bin/sdkmgr install toolchains:9 OpenHarmony/toolchains:9 --accept-license
+```
+
 ## 生成？？
 
