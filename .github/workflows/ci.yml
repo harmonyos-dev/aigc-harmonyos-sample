@@ -23,7 +23,7 @@ jobs:
         run: npm ci
 
       - name: Build
-        run: npm run build
+        run: ./node_modules/.bin/hvigor --mode module -p product=default assembleHap
 
       - name: Test
         run: npm test
