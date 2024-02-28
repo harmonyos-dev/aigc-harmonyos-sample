@@ -45,6 +45,10 @@ jobs:
       - name: Install HarmonyOS SDK
         run: |
           # chmod +x commandline
+          # for handle Failed to request url https://devecostudio-dre.op.hicloud.com/sdkmanager/v5/hos/getSdkList
+          #[                    ]0%  
+          export JAVA_TOOL_OPTIONS="$JAVA_TOOL_OPTIONS -Duser.country=CN"
+          
           chmod +x command-line-tools/sdkmanager/bin/sdkmgr
           # 安装 HarmonyOS SDK
           command-line-tools/sdkmanager/bin/sdkmgr install toolchains:9 OpenHarmony/toolchains:9 --accept-license

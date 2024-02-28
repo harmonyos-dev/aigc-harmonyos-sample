@@ -41,5 +41,28 @@ TODO：当前 HarmonyOS 项目要支持这种方式比较有难度，需要等�
 command-line-tools/sdkmanager/bin/sdkmgr install toolchains:9 OpenHarmony/toolchains:9 --accept-license
 ```
 
+Linux 下跑不成功？？
+
+```
+Run # chmod +x commandline-tools-linux-
+  # chmod +x commandline-tools-linux-
+  chmod +x command-line-tools/sdkmanager/bin/sdkmgr
+  # 安装 HarmonyOS SDK
+  command-line-tools/sdkmanager/bin/sdkmgr install toolchains:9 OpenHarmony/toolchains:9 --accept-license
+  shell: /usr/bin/bash -e {0}
+  env:
+    JAVA_HOME: /opt/hostedtoolcache/Java_Zulu_jdk/17.0.10-7/x64
+    JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Zulu_jdk/17.0.10-7/x64
+
+[                    ]0%  
+[                    ]0%  
+                          
+Failed to request url https://devecostudio-dra.op.hicloud.com/sdkmanager/v5/hos/getSdkList
+[                    ]0%  
+                          
+Unable to find the specified toolchains:9.
+Error: Process completed with exit code 1.
+```
+
 ## 生成？？
 
