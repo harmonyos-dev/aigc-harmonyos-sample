@@ -32,16 +32,14 @@ jobs:
           
           # 下载 release asset
           curl -LJO "$ASSET_URL"
-
       - name: Unzip Release Assets
         run: |
-          unzip -o commandline-tools-linux-2.0.0.2.zip
+          unzip commandline-tools-linux-2.0.0.2.zip
 
       - name: Install HarmonyOS SDK
         run: ｜
           # chmod +x commandline-tools-linux-
           chmod +x command-line-tools/sdkmanager/bin/sdkmgr
-          
           # 安装 HarmonyOS SDK
           command-line-tools/sdkmanager/bin/sdkmgr install toolchains:9 OpenHarmony/toolchains:9 --accept-license
 
