@@ -64,10 +64,39 @@
     </code>
 </pre>
 
+<pre>
+    <code class="language-arkts">
+        @Entry
+        @Component
+        struct RefreshExample {
+          @State isRefreshing: boolean = false
+          @State counter: number = 0
+
+          build() {
+            Column() {
+              Text('Pull Down and isRefreshing: ' + this.isRefreshing)
+                .fontSize(30)
+                .margin(10)
+
+              Refresh({ refreshing: $$this.isRefreshing, offset: 120, friction: 100 }) {
+                Text('Pull Down and refresh: ' + this.counter)
+                  .fontSize(30)
+                  .margin(10)
+              }
+              .onStateChange((refreshStatus: RefreshStatus) => {
+                console.info('Refresh onStatueChange state is ' + refreshStatus)
+              })
+            }
+          }
+        }
+    </code>
+</pre>
+
 <!--import highlight.js-->
 <script src="theme/highlight.js"></script>
 <!--import highlightjs.css from cdn-->
 <link rel="stylesheet" href="https://harmonyos-dev.github.io/aigc-harmonyos-sample/highlight.css">
+<link rel="stylesheet" href="assets/custom.css">
 <script src="assets/custom.js"></script>
 </body>
 </html>

@@ -9,7 +9,9 @@ span.hljs-meta, span.hljs-variable {
 span.hljs-keyword {
     color: #E2DA90;
 }
-
+/*span.hljs-title.class_ {*/
+/*    color: #607874;*/
+/*}*/
 span.hljs-title {
     color: #65CCE1;
 }
