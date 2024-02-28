@@ -57,7 +57,9 @@ jobs:
         run: npm ci
 
       - name: Build
-        run: ./node_modules/.bin/hvigor --mode module -p product=default assembleHap
+        run: |
+          export HOS_SDK_HOME=./hwsdk
+          ./node_modules/.bin/hvigor --mode module -p product=default assembleHap
 
       - name: Test
         run: npm test
