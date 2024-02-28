@@ -4,10 +4,36 @@ TODO：当前 HarmonyOS 项目要支持这种方式比较有难度，需要等�
 
 ## Install
 
-OHPM doc: https://ohpm.openharmony.cn/#/cn/help/quickstart
+根据 OpenHarmonyOS 的文档: https://ohpm.openharmony.cn/#/cn/help/quickstart ,需要先安装 ohpm 工具包。
 
-Command Link Download Link:
+下载 CLI 工具：[https://developer.harmonyos.com/cn/develop/deveco-studio#download_cli](https://developer.harmonyos.com/cn/develop/deveco-studio#download_cli)
 
+测试：
+
+```bash
+➜  MyApplication2 git:(master) ✗ ./node_modules/.bin/hvigor --mode module -p product=default assembleHap
+> hvigor Starting Hvigor Daemon...
+> hvigor WARN: Failed to start hvigor daemon. The build will be started in no-daemon mode.
+> hvigor UP-TO-DATE :entry:default@PreBuild...
+> hvigor Finished :entry:default@GenerateMetadata... after 7 ms
+> hvigor Finished :entry:default@MergeProfile... after 2 ms
+> hvigor Finished :entry:default@BuildNativeWithCmake... after 1 ms
+> hvigor Finished :entry:default@GenerateLoaderJson... after 4 ms
+> hvigor Finished :entry:default@MakePackInfo... after 6 ms
+> hvigor Finished :entry:default@ProcessProfile... after 88 ms
+> hvigor Finished :entry:default@BuildNativeWithNinja... after 1 ms
+> hvigor Finished :entry:default@ProcessResource... after 3 ms
+> hvigor UP-TO-DATE :entry:default@ProcessLibs...
+> hvigor Finished :entry:default@CompileResource... after 49 ms
+> hvigor Finished :entry:default@CompileJS... after 3 ms
+> hvigor Finished :entry:default@CompileArkTS... after 2 s 376 ms
+> hvigor Finished :entry:default@PackageHap... after 1 s 722 ms
+> hvigor WARN: Will skip sign 'hos_hap'. No signingConfigs profile is configured in current project.
+               If needed, configure the signingConfigs in /Users/phodal/DevEcoStudioProjects/MyApplication2/build-profile.json5 .
+> hvigor Finished :entry:default@SignHap... after 2 ms
+> hvigor Finished :entry:assembleHap... after 1 ms
+> hvigor BUILD SUCCESSFUL in 5 s 130 ms
 ```
-https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_package_901_9/b1/v3/E6zhv5UFQ2-inIwNJhTN6Q/commandline-tools-linux-2.0.0.2.zip?HW-CC-KV=V1&HW-CC-Date=20230621T074401Z&HW-CC-Expire=315360000&HW-CC-Sign=621224257B02079B1E76C0A56FDF21483400B1E3556213F88DC79BC9BE7D595D
-```
+
+## 生成？？
+
