@@ -34,7 +34,8 @@ jobs:
           curl -LJO "$ASSET_URL"
 
       - name: Unzip Release Assets
-        run: unzip -o commandline-tools-linux-2.0.0.2.zip
+        run: |
+          unzip -o commandline-tools-linux-2.0.0.2.zip
 
       - name: Install HarmonyOS SDK
         run: ｜
