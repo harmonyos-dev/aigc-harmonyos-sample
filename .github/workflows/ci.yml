@@ -8,7 +8,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
 
     steps:
       - uses: actions/checkout@v2
@@ -30,7 +30,7 @@ jobs:
           RELEASE_JSON=$(curl -s -H "Accept: application/vnd.github.v3+json" https://api.github.com/repos/harmonyos-dev/hos-sdk/releases/latest)
           
           # 从 release 的信息中提取需要的 asset URL
-          ASSET_URL=$(echo "$RELEASE_JSON" | jq -r '.assets[] | select(.name | test("commandline-tools-linux-2.0.0.2.zip")) | .browser_download_url')
+          ASSET_URL=$(echo "$RELEASE_JSON" | jq -r '.assets[] | select(.name | test("commandline-tools-mac-2.0.0.2.zip")) | .browser_download_url')
           
           # 输出 asset URL
           echo "Asset URL: $ASSET_URL"
@@ -40,11 +40,11 @@ jobs:
 
       - name: Unzip Release Assets
         run: |
-          unzip commandline-tools-linux-2.0.0.2.zip
+          unzip commandline-tools-mac-2.0.0.2.zip
 
       - name: Install HarmonyOS SDK
         run: |
-          # chmod +x commandline-tools-linux-
+          # chmod +x commandline
           chmod +x command-line-tools/sdkmanager/bin/sdkmgr
           # 安装 HarmonyOS SDK
           command-line-tools/sdkmanager/bin/sdkmgr install toolchains:9 OpenHarmony/toolchains:9 --accept-license
