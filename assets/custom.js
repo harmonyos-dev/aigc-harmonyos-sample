@@ -445,7 +445,7 @@ let javascript = function (hljs) {
         // class Car extends vehicle
             {
                 match: [
-                    /class/,
+                    /class|struct/,
                     /\s+/,
                     IDENT_RE,
                     /\s+/,
@@ -455,7 +455,7 @@ let javascript = function (hljs) {
                 ],
                 scope: {
                     1: "keyword",
-                    3: "title.class",
+                    3: "title.class_id",
                     5: "keyword",
                     7: "title.class.inherited"
                 }
@@ -469,7 +469,7 @@ let javascript = function (hljs) {
                 ],
                 scope: {
                     1: "keyword",
-                    3: "title.class"
+                    3: "title.class_id"
                 }
             },
 
