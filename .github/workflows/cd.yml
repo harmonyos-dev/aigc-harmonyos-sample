@@ -61,7 +61,7 @@ jobs:
         run: |
           npm init -y
           npm config set @ohos:registry=https://repo.harmonyos.com/npm/
-          npm install @ohos/hvigor @ohos/hvigor-ohos-plugin
+          npm install @ohos/hvigor@2.4.2 @ohos/hvigor-ohos-plugin@2.4.2
 
       - name: Build
         run: |
